@@ -245,20 +245,110 @@ button .b2_a{
 
 /* ---------------------------------Projects section----------------------- */
 .Projects{
-    background-color: green;
+    height: 100vh;
+    width: 100%;
 }
+
+
+.pro_main{
+    margin-top: 20vh;
+    margin-left: 10%;
+    height: 70vh;
+    width: 80%;
+    border-radius: 10px;
+    border: 3px solid var(--text2-color--);
+}
+
+.pro_main span{
+    margin-top: 50px;
+    color: var(--text1-color--);
+    font-size: 1.2rem;
+
+}
+
+
+
 
 /* ---------------------------------Contact section----------------------- */
-.contact{
-    background-color: blue;
+.Contact{
+    height: 100vh;
+    width: 100%;
 }
 
 
+.con_main{
+    margin-top: 20vh;
+    margin-left: 10%;
+    height: 70vh;
+    width: 80%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:3fr 5fr;
+    grid-template-rows:10fr;
+    grid-gap: 10px;
+}
 
+.c_part1{
+    grid-column:1/2;
+    grid-row: 1/2;
+}
 
+.c_part2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-left: 3px solid var(--text2-color--);
+    margin: 20px;
+    color: var(--text2-color--);
+    padding-left: 20px;
+    font-size: 2.5rem;
+}
 
+.c_part2 p{
+    margin-top: 20px;
+    color: var(--text1-color--);
+    font-size: 1.5rem;
+}
 
+.c_part2 .i1{
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1rem;
+    transition: all 0.5s;
 
+    &:focus{
+        width: 85%;
+    }
+}
+
+.c_part2 .msg{
+    margin-top: 50px;
+    width: 80%;
+    resize: none;
+    font-size: 1rem;
+    transition: all 0.5s;
+
+    &:focus{
+        width: 85%;
+    }
+}
+
+.c_part2 .f_btn{
+    height: 50px;
+    width: 80%;
+    border: 2px solid var(--text2-color--);
+    color: var(--text2-color--);
+    font-size: 0.7rem;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: var(--text2-color--);
+        color: var(--text1-color--);
+    }
+}
 
 
 /* --------------------------------------------mobile _ Mod------------- */
