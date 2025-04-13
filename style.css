@@ -291,7 +291,7 @@ button .b2_a{
 .c_part1{
     grid-column:1/2;
     grid-row: 1/2;
-    background-image:url(images/contact_us_logo.png);
+    background-image:url(contact_us_logo.png);
     background-repeat: no-repeat;
 }
 
@@ -604,7 +604,7 @@ button .b2_a{
     .c_part1{
         grid-column:1/2;
         grid-row: 1/2;
-        background-image:url(images/contact_us_logo.png);
+        background-image:url(contact_us_logo.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 5px;
