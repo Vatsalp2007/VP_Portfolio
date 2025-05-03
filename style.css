@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text1-color--: rgba(255, 255, 255, 0.849);
+    --text2-color--:rgb(0, 145, 202);
+    --background-color--:rgb(0, 45, 63);
+}
+
+html {
+    font-size: 1.5vw;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 45, 63);
+}   
+
+.nav_bar{
+    height: 9vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.nav_bar span{
+    margin-left: 50px;
+    margin-top: 1%;
+}
+
+.menus{
+    height: 9vh;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    place-content: center;
+}
+
+ul{
+    display: flex;
+    text-align: center;
+    place-content: center;
+    color: var(--text1-color--);
+}
+
+li{
+    margin-left: 5%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--text1-color--);
+    transition: all 0.5s;
+    animation: menus 1.5s linear;
+}
+
+@keyframes menus {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+li a:hover{
+    color:var(--text2-color--);
+    border-bottom: 3px solid var(--text2-color--);
+}
+
+section {
+    margin-bottom: 30px; /* Reduce space between sections */
+    padding: 20px 0; /* Adjust top and bottom padding */
+  }
+/* ---------------------------------Home section----------------------- */
+.Home{
+    height: 90h;
+    padding-top: 7%;
+}
+
+.home_main{
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns:0.5fr 6fr 4fr;
+    grid-template-rows:10fr;
+    grid-gap: 10px;
+}
+
+.text_1{
+    grid-column:2/3;
+    grid-row:1/2;
+    padding-top: 10%;
+}
+
+.photo_1{
+    grid-column:3/4;
+    grid-row:1/2;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.text1_1{
+    color: var(--text1-color--);
+    font-size: 2.5rem;
+    animation: text1_1 2s linear;
+}
+@keyframes text1_1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.text1_2{
+    color: var(--text2-color--);
+    font-size: 1.7rem;
+    animation: text1_2 2s linear;
+}
+@keyframes text1_3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.text1_3{
+    color: var(--text1-color--);
+    font-size: 0.9rem;
+    animation: text1_3 2s linear;
+}
+@keyframes text1_2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    place-content: center;
+    background-color: var(--text2-color--);
+    font-size: 1rem;
+    color: var(--text1-color--);
+    border: 2px solid var(--text2-color--);
+    border-radius: 7px;
+    box-shadow: 0 10px 5px #252525;
+    transition: all 0.5s;
+    animation: text1_1 2s linear;
+
+    &:hover{
+        transform: scale(0.86);
+        cursor: pointer;
+    }
+}
+
+button .b1_a{
+    text-decoration: none;
+    color: var(--text1-color--);
+}
+
+button .b2_a{
+    text-decoration: none;
+    color: var(--text2-color--);
+}
+
+.b2{
+    background-color:transparent;
+    color: var(--text2-color--);
+}
+
+.home_main .text_1 i{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    transition: all 0.3s;
+    animation: text1_1 2s linear;
+
+    &:hover{
+        transform: scale(0.86);
+        cursor: pointer;
+    }
+}
+
+/* ---------------------------------About section----------------------- */
+.About{
+    padding-top: 20vh;
+    background-color: var(--background-color--);
+}
+
+.about_main{
+    height: 70vh;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows:10fr;
+    grid-gap: 10px;
+}
+
+.a_part1{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+
+.a_part2{
+    font-size: 1.5vw;
+    grid-column:2/3;
+    grid-row:1/2;
+    border-left: 2px solid var(--text1-color--);
+    margin: 40px;
+    padding-left: 30px;
+}
+
+.a_part2 span{
+    font-size: 1.5rem;
+    color: lightblue;
+}
+
+
+.a_part2 p{
+    color: var(--text1-color--);
+}
+
+
+
+
+
+/* ---------------------------------Projects section----------------------- */
+.Projects{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.pro_main{
+    margin-top: 20vh;
+    margin-left: 10%;
+    height: 70vh;
+    width: 80%;
+    border-radius: 10px;
+    border: 3px solid var(--text2-color--);
+}
+
+.pro_main span{
+    margin-top: 50px;
+    color: var(--text1-color--);
+    font-size: 1.2rem;
+
+}
+
+
+
+
+/* ---------------------------------Contact section----------------------- */
+.Contact{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.con_main{
+    margin-top: 20vh;
+    margin-left: 10%;
+    height: 70vh;
+    width: 80%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns:3fr 5fr;
+    grid-template-rows:10fr;
+    grid-gap: 10px;
+}
+
+.c_part1{
+    grid-column:1/2;
+    grid-row: 1/2;
+    background-image:url(images/contact_us_logo.png);
+    background-repeat: no-repeat;
+}
+
+.c_part2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-left: 3px solid var(--text2-color--);
+    margin: 20px;
+    color: var(--text2-color--);
+    padding-left: 20px;
+    font-size: 2.5rem;
+}
+
+.c_part2 p{
+    margin-top: 20px;
+    color: var(--text1-color--);
+    font-size: 1.5rem;
+}
+
+.c_part2 .i1{
+    height: 50px;
+    width: 80%;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 1rem;
+    transition: all 0.5s;
+
+    &:focus{
+        width: 85%;
+    }
+}
+
+.c_part2 .msg{
+    margin-top: 50px;
+    width: 80%;
+    resize: none;
+    font-size: 1rem;
+    transition: all 0.5s;
+
+    &:focus{
+        width: 85%;
+    }
+}
+
+.c_part2 .f_btn{
+    height: 50px;
+    width: 80%;
+    border: 2px solid var(--text2-color--);
+    color: var(--text2-color--);
+    font-size: 0.7rem;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: var(--text2-color--);
+        color: var(--text1-color--);
+    }
+}
+
+
+/* --------------------------------------------mobile _ Mod------------- */
+
+@media(max-width:900px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    :root {
+        --text1-color--: rgba(255, 255, 255, 0.849);
+        --text2-color--:rgb(0, 145, 202);
+        --background-color--:rgb(0, 45, 63);
+    }
+    
+    html{
+        font-size: 2.5vw;
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        background-color: rgb(0, 45, 63);
+    }   
+    
+    .nav_bar{
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        background-color: rgb(0, 45, 63);
+    }
+    
+    .menus{
+        height: 10vh;
+        width: 100%;
+        text-align: center;
+        place-content: center;
+    }
+    
+    ul{
+        display: flex;
+        text-align: center;
+        place-content: center;
+        color: var(--text1-color--);
+    }
+    
+    li{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: var(--text1-color--);
+        transition: all 0.5s;
+        animation: menus 1.5s linear;
+    }
+    
+    @keyframes menus {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    li a:hover{
+        color:var(--text2-color--);
+        border-bottom: 3px solid var(--text2-color--);
+    }
+    
+    section {
+        margin-bottom: 30px; /* Reduce space between sections */
+        padding: 20px 0; /* Adjust top and bottom padding */
+      }
+    /* ---------------------------------Home section----------------------- */
+    .Home{
+        height: max-content;
+        padding-top: 7%;
+        margin-bottom: 200px;
+    }
+    
+    .home_main{
+        height: 70vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 12fr;
+        grid-template-rows:0.5fr 300px 5fr;
+        grid-gap: 10px;
+        margin-top: 7vh;
+    }
+    
+    .text_1{
+        grid-column:1/2;
+        grid-row:3/4;
+        padding-top: 10%;
+        padding-left: 20px;
+    }
+    
+    .photo_1{
+        grid-column:1/2;
+        grid-row:2/3;
+        margin: 20px;
+    }
+    
+    .text1_1{
+        color: var(--text1-color--);
+        font-size: 3.9rem;
+        animation: text1_1 2s linear;
+    }
+    @keyframes text1_1{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    .text1_2{
+        color: var(--text2-color--);
+        font-size: 2.5rem;
+        animation: text1_2 4s linear;
+    }
+    @keyframes text1_2{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    .text1_3{
+        color: var(--text1-color--);
+        font-size: 1.5rem;
+        animation: text1_3 4s linear;
+    }
+    @keyframes text1_3{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    
+    button{
+        height: 50px;
+        width: 150px;
+        text-align: center;
+        place-content: center;
+        background-color: var(--text2-color--);
+        font-size: 1.9rem;
+        color: var(--text1-color--);
+        border: 2px solid var(--text2-color--);
+        border-radius: 7px;
+        box-shadow: 0 10px 5px #252525;
+        transition: all 0.5s;
+    
+        &:hover{
+            transform: scale(0.86);
+            cursor: pointer;
+        }
+    }
+    
+    .b2{
+        background-color:transparent;
+        color: var(--text2-color--);
+        margin-left: 20px;
+    }
+
+    .home_main .text_1 i{
+        font-size: 3rem;
+        margin-left: 30px;
+        transition: all 0.3s;
+        margin-top: 30px;
+    
+        &:hover{
+            transform: scale(0.86);
+            cursor: pointer;
+        }
+    }
+    
+    /* ---------------------------------About section----------------------- */
+    .About{
+        padding-top: 200px;
+        background-color: var(--background-color--);
+    }
+    
+    .about_main{
+        height: max-content;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns:7fr;
+        grid-template-rows:10fr;
+        grid-gap: 10px;
+    }
+    
+    .a_part2{
+        font-size: 1.5vw;
+        grid-column:2/3;
+        grid-row:1/2;
+        border-left: 2px solid var(--text1-color--);
+        margin: 20px;
+        padding-left: 30px;
+    }
+    
+    .a_part2 span{
+        font-size: 3rem;
+        color: lightblue;
+    }
+    
+    
+    .a_part2 p{
+        font-size: 1.5rem;
+        color: var(--text1-color--);
+    }
+    
+    /* ---------------------------------Projects section----------------------- */
+    
+    
+    
+    /* ---------------------------------Contact section----------------------- */
+    .Contact{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    
+    .con_main{
+        margin-top: 20vh;
+        margin-left: 10%;
+        height: 70vh;
+        width: 80%;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns:10fr;
+        grid-template-rows:3fr 7fr;
+        grid-gap: 10px;
+    }
+    
+    .c_part1{
+        grid-column:1/2;
+        grid-row: 1/2;
+        background-image:url(images/contact_us_logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 5px;
+    }
+    
+    .c_part2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-left: 3px solid var(--text2-color--);
+        margin: 20px;
+        color: var(--text2-color--);
+        padding-left: 20px;
+        font-size: 2.5rem;
+    }
+    
+    .c_part2 p{
+        margin-top: 20px;
+        color: var(--text1-color--);
+        font-size: 1.5rem;
+    }
+    
+    .c_part2 .i1{
+        height: 50px;
+        width: 80%;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+        margin-top: 10px;
+    
+        &:focus{
+            width: 85%;
+        }
+    }
+    
+    .c_part2 .msg{
+        margin-top: 10px;
+        width: 80%;
+        resize: none;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+    
+        &:focus{
+            width: 85%;
+        }
+    }
+    
+    .c_part2 .f_btn{
+        height: 50px;
+        width: 80%;
+        border: 2px solid var(--text2-color--);
+        color: var(--text2-color--);
+        font-size: 1.7rem;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: all 0.5s;
+    
+        &:hover{
+            background-color: var(--text2-color--);
+            color: var(--text1-color--);
+        }
+    }
+}
+
+/* ----------------------600 px mobile view------------------- */
